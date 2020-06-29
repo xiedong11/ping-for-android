@@ -9,13 +9,7 @@ Traceroute tracks the route packets taken from an IP network on their way to a g
 
 ![images/1.png](images/1.png)
 
-## Adding to project
 
-```groovy
-dependencies {
-    implementation 'com.wandroid:traceroute:<latest-version>'
-}
-```
 
 ## Simple usage
 
@@ -46,4 +40,3 @@ TraceRoute.traceRoute("www.google.com", true)
 }
 ```
 
-get executable file from [traceroute-android-executable](https://github.com/wangjing53406/traceroute-android-executable)
