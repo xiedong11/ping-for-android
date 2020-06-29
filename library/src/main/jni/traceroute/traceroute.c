@@ -69,7 +69,7 @@
 #define MAX_PROBES	10
 #define MAX_GATEWAYS_4	8
 #define MAX_GATEWAYS_6	127
-#define DEF_HOPS	30
+#define DEF_HOPS	15   //最大跳数
 #define DEF_SIM_PROBES	16	/*  including several hops   */
 #define DEF_NUM_PROBES	3
 #define DEF_WAIT_SECS	5.0

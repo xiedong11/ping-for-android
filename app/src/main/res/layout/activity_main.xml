@@ -14,7 +14,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="www.google.com"
+        android:text="dw.chinanews.com"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -32,6 +32,21 @@
         app:layout_constraintStart_toEndOf="@+id/sample_text"
         app:layout_constraintTop_toTopOf="parent"/>
 
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/ping_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ping"
+        app:layout_constraintTop_toBottomOf="@+id/sample_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sample_text"
+        />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -40,7 +55,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sample_text">
+        app:layout_constraintTop_toBottomOf="@+id/ping_button">
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/result"

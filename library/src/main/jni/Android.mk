@@ -8,6 +8,7 @@ APP_OPTIM := debug
 
 MY_C_LIST := $(wildcard $(LOCAL_PATH)/libsupp/*.c)
 MY_C_LIST += $(wildcard $(LOCAL_PATH)/traceroute/*.c)
+MY_C_LIST += $(wildcard $(LOCAL_PATH)/ping/*.c)
 
 LOCAL_MODULE    := traceroute
 

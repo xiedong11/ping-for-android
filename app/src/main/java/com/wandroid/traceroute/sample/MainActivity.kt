@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.AppCompatButton
 import android.support.v7.widget.AppCompatEditText
 import android.support.v7.widget.AppCompatTextView
+import com.wandroid.traceroute.PingForAndroid
 import com.wandroid.traceroute.TraceRoute
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,7 +27,16 @@ class MainActivity : AppCompatActivity() {
         findViewById<AppCompatButton>(R.id.sample_button).setOnClickListener {
             doTraceRoute()
         }
+        ping_button.setOnClickListener{
+            doPing()
+        }
 
+    }
+
+    private fun doPing() {
+        result.text = ""
+        val res: String = PingForAndroid.ping(text.text.toString())
+        result.text = res
     }
 
     private fun doTraceRoute() {
@@ -49,6 +60,10 @@ class MainActivity : AppCompatActivity() {
             failed { code, reason -> result.append("""\ntraceroute failed.code:$code, reason:$reason""") }
         }
         TraceRoute.traceRoute(text.text.toString(), true)
+
+
     }
+
+
 
 }
